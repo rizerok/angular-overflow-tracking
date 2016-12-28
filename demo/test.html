@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/demo/style.css">
+    <script defer src="/node_modules/angular/angular.js"></script>
+    <script defer src="/bundle/js/index.js"></script>
+</head>
+<body ng-app="overflow-tracking" >
+<div class="redactor" overflow-tracking="html">
+    <h1 ng-bind="'angular work!!'">titel</h1>
+<span>
+<ul>
+	<li>1</li>
+	<li>22</li>
+	<li>3</li>
+</ul>
+    <!-- 11 -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repp<p>udiandae ut <strong>nobis</strong> officiis. </p>
+ at eaque ducimus <span></span> porro tem <p> pora  <br />amet, dignissimos consequuntur cum dolor dicta odio </p>cumque maiores est volup <h3>tates voluptate cons</h3>  ectetur distinctio. Repreh <mark>enderit optio</mark>  quidem assumenda aspernatur sed hic, quae <p> eveniet doloru</p>m
+	</span>
+    <!-- 222 -->
+</div>
+<div class="redactor2" overflow-tracking="html" container=".redactor2-inner" added-word=".........">
+    <h1>overflow tracking with inner container</h1>
+    <div class="redactor2-inner">
+        <span>
+        <ul>
+            <li>1</li>
+            <li>22</li>
+            <li>3</li>
+        </ul>
+                    <!-- 11 -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repp<p>udiandae ut <strong>nobis</strong> officiis. </p>
+         at eaque ducimus <span></span> porro tem <p> pora  <br />amet, dignissimos consequuntur cum dolor dicta odio </p>cumque maiores est volup <h3>tates voluptate cons</h3>  ectetur distinctio. Repreh <mark>enderit optio</mark>  quidem assumenda aspernatur sed hic, quae <p> eveniet doloru</p>m
+            </span>
+    </div>
+    <h4>End redactor2</h4>
+    <!-- 222 -->
+</div>
+
+<div class="redactor3" overflow-tracking="gradient" position="ver">
+    <p>gradient</p>
+<span>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repp<p>udiandae ut <strong>nobis</strong> officiis. </p>
+ at eaque ducimus <span></span> porro tem pora  <br />amet, dignissimos consequuntur cum dolor dicta odio
+ at eaque ducimus <span></span> porro tem pora  <br />amet, dignissimos consequuntur cum dolor dicta odio
+ at eaque ducimus <span></span> porro tem pora  <br />amet, dignissimos consequuntur cum dolor dicta odio
+</span>
+    <!-- 222 -->
+</div>
+</body>
+</html>

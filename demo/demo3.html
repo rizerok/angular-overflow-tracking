@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bundle/css/demo3.css">
+    <script defer src="../node_modules/angular/angular.js"></script>
+    <script defer src="../bundle/js/index.js"></script>
+</head>
+<body ng-app="overflow-tracking">
+<div class="b-product-page">
+    <h1>overflow-tracking="gradient"</h1>
+    <div class="b-product-page__categories"></div>
+    <div class="b-product-page__body">
+        <div class="b-product-page__filters"></div>
+        <div class="b-product-page__product-list" ng-init="repeat = [];repeat.length = 6">
+
+            <div class="b-product-page__item-cell" ng-repeat="n in repeat track by $index;">
+
+                <div class="b-item">
+                    <div class="b-item__img"></div>
+                    <div class="b-item__body">
+                        <div class="b-item__title">
+                            <span>Полуприцп рефрижератор Gray Adams</span>
+                        </div>
+                        <div class="b-item__description" overflow-tracking="gradient">
+                            3 оси, BPW, пневмо, бараб. торм., 86 м.куб, Carrier Vector 1850 mt, штора 3 оси, SAF, пневмо, диск. торм., 92 м.куб, бортовой, ванна под рулоны, стаканы под коники, ворота
+                            3 оси, BPW, пневмо, бараб. торм., 86 м.куб, Carrier Vector 1850 mt, штора 3 оси, SAF, пневмо, диск. торм., 92 м.куб, бортовой, ванна под рулоны, стаканы под коники, ворота
+                        </div>
+                    </div>
+                    <div class="b-item__other">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

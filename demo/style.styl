@@ -1,0 +1,174 @@
+*
+	box-sizing:border-box;
+
+body
+	font-family:arial;
+	background:#333;
+	color:#fff;
+
+h1
+	text-align:center;
+
+[overflow-tracking]
+	opacity:0;
+	transition:opacity .2s;
+	&.is-tracking
+		opacity:1;
+
+.b-container
+	display:flex;
+	flex-wrap:wrap;
+	&__block
+		height:400px;
+		width:25%;
+		overflow:hidden;
+		padding:20px;
+		margin-bottom:20px;
+		background-color:#c44;
+		border:5px solid #d44;
+		background-image:linear-gradient(to top, #b44 0px ,#b44 20px,transparent 20px, transparent 100%);
+		@media all and (max-width:600px)
+			width:100%;
+
+$glb-gutter = 15px;
+$glb-anim-drt = .2s;
+$breakpoint-md = 1024px;
+ratiobox($w,$h)
+	width:100%;
+	position:relative;
+	&:before
+		content:'';
+		display:block;
+		padding-top:(100%/$w*$h);
+font-mix(fsz, lh = false, fw = false, fst = false, ff = false)
+	if (fsz || fsz==0) and fw and lh and fst and ff
+		font:fw fsz/lh ff;
+		font-style:fst;
+	else if (fsz || fsz==0) and fw and lh and fst
+		font-size: fsz;
+		line-height:lh;
+		font-weight:fw;
+		font-style:fst;
+	else if (fsz || fsz==0) and fw and lh
+		font-size: fsz;
+		line-height:lh;
+		font-weight:fw;
+	else if (fsz || fsz==0) and lh
+		font-size: fsz;
+		line-height:lh;
+	else if (fsz || fsz==0) and fw
+		font-size: fsz;
+		font-weight:fw;
+	else
+		font-size: fsz;
+
+ratio($max-val,$val)
+	100%/$max-val*$val
+
+.b-blog-list-widget
+	&__list
+		margin:0 ($glb-gutter/2*-1);
+		overflow:hidden;
+	&__socket
+		width:50%;
+		padding:0 ($glb-gutter/2);
+		margin-top:$glb-gutter;
+	&__button
+		margin-top:70px;
+		text-align:center;
+.b-blog-list-small-item
+	this = '.b-blog-list-small-item';
+	min-height:250px;
+	color:#fff;
+	&__image
+		width:40%;
+		background-color:#101010;
+		&-ratiobox
+			ratiobox(233,350);
+		&-area
+			position:absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			background-size:cover;
+			background-position:center;
+			background-repeat:no-repeat;
+	&__text
+		width:60%;
+		position:relative
+		//padding:0 37px;
+		border:4px solid #000;
+		border-left:0;
+		transition:border $glb-anim-drt;
+		&-area
+			position:absolute;
+			left:37px;
+			right:37px;
+			top:50px;
+			bottom:50px;
+			overflow:hidden;
+			background-color:#2b2b2b;
+			@media all and (max-width:$breakpoint-md)
+				top:25px;
+				bottom:25px;
+	&__title
+		font-mix(1rem,1.5rem,bold);
+		text-transform:uppercase;
+		color:#fff;
+	&__description
+		@media all and (max-width:$breakpoint-md)
+			top:25px;
+			bottom:25px;
+		font-mix(14px,1.5rem);
+		color:#b8b8b8;
+		overflow:hidden;
+		height:2.6rem*4;
+	&:hover {this}__text
+		border-color:red;
+.b-button-nav-back
+	this = '.b-button-nav-back';
+	display:inline-block;
+	cursor:pointer;
+	&__icon,
+	&__text
+		display:inline-block;
+		vertical-align:middle;
+	&__icon
+		width:10px;
+		height:10px;
+		transform:scaleX(-1);
+		margin-right:20px;
+		.st0
+			fill:#141341;
+		&_right
+			transform:scaleX(1);
+			margin-left:20px;
+			margin-right:0px;
+	&__text
+		font-mix(16px,1.2em,bold);
+		text-transform:uppercase;
+		color:#bcbcbc;
+	&:hover
+		{this}__icon .st0
+			fill:darken(#141341,20%);
+		{this}__text
+			color:darken(#bcbcbc,20%);
+.b-cnr
+	&-content
+		margin-left:auto;
+		margin-right:auto;
+		max-width:1500px;
+		width:ratio(1384,1134);
+.b-set-flex
+	display:flex;
+	&_justify
+		justify-content:space-between;
+	&_space-around
+		justify-content:space-around;
+	&_wrap
+		flex-wrap:wrap;
+
+.b-item__description
+	color:#7383ee;
+	background-color:#222;

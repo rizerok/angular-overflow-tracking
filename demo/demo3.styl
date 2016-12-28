@@ -1,0 +1,56 @@
+body
+	background:#333;
+	color:#fff;
+	font-family:arial;
+*
+	box-sizing:border-box;
+//=========================
+.b-product-page
+	margin:20px;
+	&__categories
+		height:50px;
+		width:100%;
+		background:#ddd;
+	&__body
+		margin-top:10px;
+		display:flex;
+	&__filters
+		width:20%;
+		background:#ddd;
+		margin-right:20px;
+	&__product-list
+		width:80%;
+	&__item-cell + &__item-cell
+		margin-top:10px;
+
+.b-item
+	background:#ddd;
+	color:#111;
+	padding:20px;
+	display:flex;
+	overflow:hidden;
+	&__img
+		width:20%;
+		background:#bbb;
+		margin-right:20px;
+	&__title
+		font-size:1.4em;
+		margin-bottom:10px;
+	&__description
+		line-height:1.3em;
+		max-height:1.3em*2;
+		overflow:hidden;
+	&__other
+		width:20%;
+		margin-left:20px;
+		background:#bbb;
+
+[overflow-tracking]
+	opacity:0;
+	transition:opacity .2s;
+	&.is-tracking
+		opacity:1;
+
+h1
+	text-align:center;
+

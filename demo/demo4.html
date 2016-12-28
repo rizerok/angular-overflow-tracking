@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bundle/css/demo4.css">
+    <script defer src="../node_modules/angular/angular.js"></script>
+    <script defer src="../bundle/js/index.js"></script>
+</head>
+<body ng-app="overflow-tracking" ng-init="repeat = [];repeat.length=2">
+<div class="slide" ng-repeat="n in repeat track by $index">
+    <div class="slide-item">
+        <div class="item" ng-class="{'item_1':$index===1}" overflow-tracking="gradient" position="ver">
+            <h1>overflow-tracking="gradient" position="ver"</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci debitis, quaerat, quisquam totam sed quibusdam impedit ullam officiis sapiente hic minima, deserunt eaque, cum aperiam placeat ipsam enim accusamus nam minus veniam veritatis iusto quas. Beatae assumenda facere accusantium delectus ratione, dolor dolore cumque asperiores maiores necessitatibus porro tempora earum, doloribus commodi fugit totam itaque laborum et, voluptates optio nostrum mollitia laboriosam reiciendis. Minima mollitia, officiis fugit facere veritatis iste. Atque, dolor unde incidunt sint totam corrupti vitae! Quo laudantium, minima aliquid doloremque fuga adipisci distinctio deleniti laboriosam, quasi, quibusdam porro, optio exercitationem repellat perferendis eaque illum atque saepe!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci debitis, quaerat, quisquam totam sed quibusdam impedit ullam officiis sapiente hic minima, deserunt eaque, cum aperiam placeat ipsam enim accusamus nam minus veniam veritatis iusto quas. Beatae assumenda facere accusantium delectus ratione, dolor dolore cumque asperiores maiores necessitatibus porro tempora earum, doloribus commodi fugit totam itaque laborum et, voluptates optio nostrum mollitia laboriosam reiciendis. Minima mollitia, officiis fugit facere veritatis iste. Atque, dolor unde incidunt sint totam corrupti vitae! Quo laudantium, minima aliquid doloremque fuga adipisci distinctio deleniti laboriosam, quasi, quibusdam porro, optio exercitationem repellat perferendis eaque illum atque saepe!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci debitis, quaerat, quisquam totam sed quibusdam impedit ullam officiis sapiente hic minima, deserunt eaque, cum aperiam placeat ipsam enim accusamus nam minus veniam veritatis iusto quas. Beatae assumenda facere accusantium delectus ratione, dolor dolore cumque asperiores maiores necessitatibus porro tempora earum, doloribus commodi fugit totam itaque laborum et, voluptates optio nostrum mollitia laboriosam reiciendis. Minima mollitia, officiis fugit facere veritatis iste. Atque, dolor unde incidunt sint totam corrupti vitae! Quo laudantium, minima aliquid doloremque fuga adipisci distinctio deleniti laboriosam, quasi, quibusdam porro, optio exercitationem repellat perferendis eaque illum atque saepe!
+        </div>
+    </div>
+</div>
+</body>
+</html>

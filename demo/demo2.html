@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bundle/css/style.bundle.css">
+    <script defer src="../node_modules/angular/angular.js"></script>
+    <script defer src="../bundle/js/index.js"></script>
+</head>
+<body ng-app="overflow-tracking">
+<h1>overflow-tracking="html" resize="200" container=".b-item__description"</h1>
+<div class="b-blog-list-widget">
+    <div>
+        <div class="b-cnr-content">
+            <div class="b-blog-list-widget__list b-set-flex b-set-flex_wrap" ng-init="repeat = [];repeat.length = 4">
+                <div class="b-blog-list-widget__socket" ng-repeat="n in repeat track by $index;">
+                    <a class="b-blog-list-small-item b-set-flex" href="#">
+                        <div class="b-blog-list-small-item__image">
+                            <div class="b-blog-list-small-item__image-ratiobox">
+                                <div class="b-blog-list-small-item__image-area">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-blog-list-small-item__text">
+                            <div class="b-blog-list-small-item__text-area" overflow-tracking="html" resize="200" container=".b-item__description">
+                                <div class="b-blog-list-small-item__title">
+                                    <span>Top Text</span>
+                                </div>
+                                <div class="b-item__description
+                                 b-redactor
+                                  ">
+                                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                                    <strong>adipisicing elit. Ab aliquam, dolorum eos eveni</strong>
+                                    <mark>et numquam quos sequi! A accusantium aliquam, doloremque enim</mark>
+                                    <ol>
+                                        <li>one</li>
+                                        <li>two</li>
+                                        <li>three</li>
+                                    </ol>
+                                </div>
+                                <div class="b-blog-list-small-item__bottom-text">
+                                    <h4>bottom text</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-blog-list-widget__button">
+        <a class="b-button-nav-back" href="#">
+            <div class="b-button-nav-back__text">
+                <span>back to all posts</span>
+            </div>
+            <svg version="1.1" class="b-button-nav-back__icon b-button-nav-back__icon_right" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 7 12" style="enable-background:new 0 0 7 12;" xml:space="preserve">
+            <path class="st0" d="M1,12c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4L4.6,6L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5,5
+                c0.4,0.4,0.4,1,0,1.4l-5,5C1.5,11.9,1.3,12,1,12z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+</body>
+</html>
