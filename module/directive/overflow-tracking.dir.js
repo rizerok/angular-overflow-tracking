@@ -83,7 +83,6 @@ function setGradient(element,position,size){
 }
 
 export default ()=>{
-    'ngInject';
     return {
         scope:{
             //hot
@@ -96,6 +95,7 @@ export default ()=>{
         },
         restrict:'A',
         controller:function($scope, $element, $attrs,$timeout){
+            'ngInject';
             $timeout(function(){
                 var mode = $attrs[directiveName];
                 switch(mode){
