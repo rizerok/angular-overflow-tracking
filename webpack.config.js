@@ -6,7 +6,7 @@ var webpack                         = require('webpack'),
     BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
     entry:{
-        'js/index':'./index.js',
+        'js/overflow-tracking':'./module/module.js',
         'css/style.bundle':'./demo/style.styl',
         'css/demo3':'./demo/demo3.styl',
         'css/demo4':'./demo/demo4.styl'
@@ -59,17 +59,17 @@ module.exports = {
         ]
     },
     plugins: [
-        // new webpack.optimize.UglifyJsPlugin({
-        //     minimize: true,
-        //     warnings: false
-        // }),
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true,
+            warnings: false
+        }),
         new ExtractTextPlugin('[name].css'),
         new BrowserSyncPlugin({
             // browse to http://localhost:3000/ during development,
             // ./public directory is being served
             host: 'localhost',
-            port: 3000,
+            port: 3002,
             server: { baseDir: [__dirname] }
-        })
+        }),
     ]
 };
