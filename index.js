@@ -1,1 +1,2 @@
-import module from './module/module';
+require('./bundle/js/overflow-tracking.js');
+//module.exports = angular;

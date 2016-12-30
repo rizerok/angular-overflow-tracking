@@ -1,8 +1,0 @@
-[overflow-tracking="html"] {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-[overflow-tracking="html"].is-tracking {
-  opacity: 1;
-}
