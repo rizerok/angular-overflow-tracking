@@ -1,11 +1,19 @@
 {
   "name": "angular-overflow-tracking",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.4",
+  "description": "directive tracks the container overflows",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rizerok/angular-overflow-tracking"
+  },
+  "keywords": [
+    "overflow",
+    "overflow tracking"
+  ],
   "author": "alex",
   "license": "ISC",
   "dependencies": {
