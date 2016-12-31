@@ -15,7 +15,6 @@ function setHot(element,container,addedWord){
     }else{
         return new HtmlOverflowTracking(element,container);
     }
-
 }
 function getBackground(element){
     var bg = getComputedStyle(element,null).getPropertyValue('background-color');
@@ -58,7 +57,7 @@ function setGradient(element,position,size){
     gradient.className = 'ot-gradient';
     gradient.style.position = 'absolute';
     var bg = getBackground(element);
-    console.log(bg);
+
     if(position==='hor'){
         var bottom = elementStyle.getPropertyValue('padding-bottom');
         gradient.style.bottom = bottom;
