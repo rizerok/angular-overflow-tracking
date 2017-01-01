@@ -99,7 +99,7 @@ export default ()=>{
                 var mode = $attrs[directiveName];
                 switch(mode){
                     case 'html':
-                        //onsole.time('initHot');
+                        //console.time('initHot');
                         var hot;
                         if($scope.container){
                             hot = setHot($element[0],$element[0].querySelector($scope.container),$scope.addedWord);
@@ -107,14 +107,14 @@ export default ()=>{
                             hot = setHot($element[0],$element[0],$scope.addedWord);
                         }
                         var timeout;
-                        $scope.resize = +$scope.resize || 0;
+                        $scope.resize = +$scope.resize || 100;
                         var refresh = function(){
                             clearTimeout(timeout);
                             timeout = setTimeout(function(){
                                 hot.refresh();
                             },$scope.resize)
                         };
-                        if($scope.resize){
+                        if($scope.resize!==0){
                             window.addEventListener('resize',refresh);
                         }
                         //console.timeEnd('initHot');
