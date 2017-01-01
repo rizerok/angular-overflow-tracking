@@ -45,5 +45,5 @@
 
 - ***overflow-tracking="gradient" gradient="ver"*** градиент по виртикали. [demo](http://bashinsky.pro/sources/angular-overflow-tracking/demo/demo4.html)
 
-- ***overflow-tracking="gradient" size=""*** устанавливает размер градиента.
-Значения в диапозоне от 0 до 1.
+- ***overflow-tracking="gradient" size="0.2"*** устанавливает размер градиента.
+Значения в диапозоне от 0 до 1. По умолчанию size="0.2
