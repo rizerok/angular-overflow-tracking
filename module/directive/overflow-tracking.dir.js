@@ -114,7 +114,7 @@ export default ()=>{
                                 hot.refresh();
                             },$scope.resize)
                         };
-                        if($scope.resize!==0){
+                        if(+$scope.resize!==0){
                             window.addEventListener('resize',refresh);
                         }
                         //console.timeEnd('initHot');
