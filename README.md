@@ -16,7 +16,7 @@
     		'overflow-tracking'
 	]);
 ```
-или можно скачать готовый дистрибутив [ссылка](http://bashinsky.pro/sources/angular-overflow-tracking/bundle/js/overflow-tracking.js)
+или можно скачать готовый [дистрибутив](http://bashinsky.pro/sources/angular-overflow-tracking/bundle/js/overflow-tracking.js)
 и просто подключить к проекту
 ```html
 <script src="../node_modules/angular/angular.js"></script>
