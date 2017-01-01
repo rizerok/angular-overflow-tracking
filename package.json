@@ -1,6 +1,6 @@
 {
   "name": "angular-overflow-tracking",
-  "version": "0.0.4",
+  "version": "1.0.1",
   "description": "directive tracks the container overflows",
   "main": "index.js",
   "scripts": {
