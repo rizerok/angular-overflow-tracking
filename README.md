@@ -47,3 +47,24 @@
 
 - ***overflow-tracking="gradient" size="0.2"*** устанавливает размер градиента.
 Значения в диапозоне от 0 до 1.
+
+Так же для плавного появления можно добавить
+```css
+/*css*/
+[overflow-tracking]{
+	opacity:0;
+	transition:opacity .2s;
+}
+[overflow-tracking].is-tracking{
+	opacity:1;
+}
+```
+```stylus
+//stylus
+[overflow-tracking]
+	opacity:0;
+	transition:opacity .2s;
+	&.is-tracking
+		opacity:1;
+
+```
